@@ -1,5 +1,4 @@
 
-
 body, html {
   height: 100%;
   margin: 0;
@@ -9,7 +8,7 @@ body, html {
 .weather-container {
   height: 100vh; 
   width: 100vw; 
-  background-image: url('../Assets//360_F_266381525_alVrbw15u5EjhIpoqqa1eI5ghSf7hpz7.jpg'); 
+  background-image: url('../Assets/360_F_266381525_alVrbw15u5EjhIpoqqa1eI5ghSf7hpz7.jpg'); 
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -19,13 +18,12 @@ body, html {
   justify-content: center;
   color: white; 
   padding: 20px; 
-
 }
 
 .weather-container h1 {
   margin-top: 20px;
   font-size: 2em;
-  color:white;
+  color: white;
 }
 
 .container {
@@ -78,15 +76,11 @@ body, html {
 
 .borderr {
   border-bottom: 5px solid white;
-
 }
 
 .weather-box-second p {
   margin: 10px 0;
 }
-
-
-
 
 .loram {
   padding: 20px;
@@ -96,4 +90,104 @@ body, html {
 
 .loram h3 {
   text-align: left;
+}
+
+/* Media queries for tablets and mobile devices */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Add some space between the elements */
+  }
+
+  .weather-box-first, .weather-box-second {
+    width: 90%;
+    height: auto;
+  }
+
+  .logo-Temperature p {
+    font-size: 4em;
+  }
+
+  .loram {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .weather-container h1 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Add some space between the elements */
+  }
+
+  .weather-box-first, .weather-box-second {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo-Temperature p {
+    font-size: 3em;
+  }
+
+  .loram {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-container h1 {
+    font-size: 1.2em;
+    
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .weather-box-first{
+    width: 250px;
+    padding: 5px;
+    font-size: 1em;
+  }
+
+   .weather-box-second {
+    width: 250px;
+    padding: 5px;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 0px;
+    }  
+
+  .logo-Temperature p {
+    font-size: 1em;
+  }
+  .logo-Temperature img {
+    width: 50px;
+  }
+
+ 
+
+  .Time-wather {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .Time-wather div {
+    margin-bottom: 10px;
+  }
+
+  .loram {
+    width: 100%;
+    padding: 5px;
+  }
 }

@@ -53,7 +53,6 @@ function Weather() {
 
         <div>
           {weather ? (
-
             <div className="weather-box-second">
               <div className='Time-wather'>
                 <div>
